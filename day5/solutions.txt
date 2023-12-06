@@ -1,0 +1,88 @@
+seeds: 79 14 55 13
+List of seeds: [(79, 14), (55, 13)] 
+
+seed-to-soil map:
+Mapping for previous map 
+Now starting to process seed-to-soil map:
+50 98 2
+seed location: 98, seed destination: 50, range: 2
+Added locations so the new mapping dict looks like [(50, 98, 2)] 
+52 50 48
+seed location: 50, seed destination: 52, range: 48
+Added locations so the new mapping dict looks like [(50, 98, 2), (52, 50, 48)] 
+
+soil-to-fertilizer map:
+Mapping for previous map 
+Now starting to process soil-to-fertilizer map:
+0 15 37
+seed location: 15, seed destination: 0, range: 37
+Added locations so the new mapping dict looks like [(0, 15, 37)] 
+37 52 2
+seed location: 52, seed destination: 37, range: 2
+Added locations so the new mapping dict looks like [(0, 15, 37), (37, 52, 2)] 
+39 0 15
+seed location: 0, seed destination: 39, range: 15
+Added locations so the new mapping dict looks like [(0, 15, 37), (37, 52, 2), (39, 0, 15)] 
+
+fertilizer-to-water map:
+Mapping for previous map 
+Now starting to process fertilizer-to-water map:
+49 53 8
+seed location: 53, seed destination: 49, range: 8
+Added locations so the new mapping dict looks like [(49, 53, 8)] 
+0 11 42
+seed location: 11, seed destination: 0, range: 42
+Added locations so the new mapping dict looks like [(49, 53, 8), (0, 11, 42)] 
+42 0 7
+seed location: 0, seed destination: 42, range: 7
+Added locations so the new mapping dict looks like [(49, 53, 8), (0, 11, 42), (42, 0, 7)] 
+57 7 4
+seed location: 7, seed destination: 57, range: 4
+Added locations so the new mapping dict looks like [(49, 53, 8), (0, 11, 42), (42, 0, 7), (57, 7, 4)] 
+
+water-to-light map:
+Mapping for previous map 
+Now starting to process water-to-light map:
+88 18 7
+seed location: 18, seed destination: 88, range: 7
+Added locations so the new mapping dict looks like [(88, 18, 7)] 
+18 25 70
+seed location: 25, seed destination: 18, range: 70
+Added locations so the new mapping dict looks like [(88, 18, 7), (18, 25, 70)] 
+
+light-to-temperature map:
+Mapping for previous map 
+Now starting to process light-to-temperature map:
+45 77 23
+seed location: 77, seed destination: 45, range: 23
+Added locations so the new mapping dict looks like [(45, 77, 23)] 
+81 45 19
+seed location: 45, seed destination: 81, range: 19
+Added locations so the new mapping dict looks like [(45, 77, 23), (81, 45, 19)] 
+68 64 13
+seed location: 64, seed destination: 68, range: 13
+Added locations so the new mapping dict looks like [(45, 77, 23), (81, 45, 19), (68, 64, 13)] 
+
+temperature-to-humidity map:
+Mapping for previous map 
+Now starting to process temperature-to-humidity map:
+0 69 1
+seed location: 69, seed destination: 0, range: 1
+Added locations so the new mapping dict looks like [(0, 69, 1)] 
+1 0 69
+seed location: 0, seed destination: 1, range: 69
+Added locations so the new mapping dict looks like [(0, 69, 1), (1, 0, 69)] 
+
+humidity-to-location map:
+Mapping for previous map 
+Now starting to process humidity-to-location map:
+60 56 37
+seed location: 56, seed destination: 60, range: 37
+Added locations so the new mapping dict looks like [(60, 56, 37)] 
+56 93 4
+seed location: 93, seed destination: 56, range: 4
+Added locations so the new mapping dict looks like [(60, 56, 37), (56, 93, 4)] 
+
+mapMapping for previous map 
+Now starting to process map
+Final seed destinations look like ['79', '14', '55', '13']
