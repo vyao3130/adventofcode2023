@@ -1,0 +1,5 @@
+[('53717880', '275118112151524')] 
+Finding winning times for time 53717880 and distance to beat is 275118112151524 
+The minimum button press is 5733493 
+The maximum button press is 47984387 
+The number of ways to win is 42250895
