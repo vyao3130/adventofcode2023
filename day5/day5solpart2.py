@@ -15,10 +15,31 @@ with open("example.txt", "r") as f:
         
         elif "map" in line: # place into according destinations
             solutions.append("Mapping for previous map \n")
+            new_seed_range=[]
             for place, seed_range in enumerate(seed_list):
+                seed_begin, start_seed_range = seed_range
                 for ranges in mapping_dict:
                     seed_destination, seed_location, seed_range = ranges
                     max_seed_location = seed_location+seed_range-1 #inclusive range
+                    if seed_location<seed_begin<max_seed_location: # beginning of seed range in the mapping dict
+                        if seed_location<seed_begin+start_seed_range<max_seed_location:# seed range all within mapping dict
+                            new_seed_range.append((seed_destination+(seed_begin-seed_location), start_seed_range)) # part in map
+                        else: # beginning still in range, seed range hangs a bit out of mapping dict
+                            new_seed_range.append((seed_destination+(seed_begin-seed_location), (seed_location+seed_range)-seed_begin)) # part in map
+                            new_seed_range.append((max_seed_location+1, start_seed_range-(max_seed_location-seed_begin+1))) # part outside map
+                    elif seed_begin<seed_location: # beginning of seed range before seed location mapping
+                        if seed_begin+start_seed_range<seed_begin: # seed range not in map
+                            new_seed_range.append((seed_begin, start_seed_range))
+                        elif seed_location<seed_begin+start_seed_range<max_seed_location: # end of seed range within map
+                            new_seed_range.append((seed_begin, seed_location-seed_begin))# beginning part outside of map
+                            new_seed_range.append((seed_destination, (seed_begin + start_seed_range + 1)-seed_location))# part inside of map
+                        elif seed_location<seed_begin+start_seed_range>max_seed_location: # end of seed range outside of map
+                            new_seed_range.append((seed_begin, seed_location-seed_begin))# part outside of map start
+                            new_seed_range.append((seed_destination, (seed_begin + start_seed_range + 1)-seed_location))# part inside of map
+                            new_seed_range.append((max_seed_location+1, seed_begin+start_seed_range-max_seed_location-1))# part outside of map end
+                    else: # seed range not in map - beginning is after dictionary range
+                        new_seed_range.append((seed_begin, start_seed_range))
+
                     # solutions.append(f"Seed dict info: {seed_destination}, {seed_location}, {seed_range} \n")
                     # solutions.append(f"max seed location {max_seed_location} \n")
                         # seed_list[place] = new_loc  
