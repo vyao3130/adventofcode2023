@@ -1,0 +1,35 @@
+Working on hand 32T3K 
+{'11': 1}
+{'11': 1, '10': 1}
+{'11': 1, '10': 1, '18': 1}
+{'11': 2, '10': 1, '18': 1}
+{'11': 2, '10': 1, '18': 1, '21': 1}
+The list of cards in sorted order looks like {'11': 2, '10': 1, '18': 1, '21': 1} 
+Working on hand T55J5 
+{'18': 1}
+{'18': 1, '13': 1}
+{'18': 1, '13': 2}
+{'18': 1, '13': 2, '19': 1}
+{'18': 1, '13': 3, '19': 1}
+The list of cards in sorted order looks like {'18': 1, '13': 3, '19': 1} 
+Working on hand KK677 
+{'21': 1}
+{'21': 2}
+{'21': 2, '14': 1}
+{'21': 2, '14': 1, '15': 1}
+{'21': 2, '14': 1, '15': 2}
+The list of cards in sorted order looks like {'21': 2, '14': 1, '15': 2} 
+Working on hand KTJJT 
+{'21': 1}
+{'21': 1, '18': 1}
+{'21': 1, '18': 1, '19': 1}
+{'21': 1, '18': 1, '19': 2}
+{'21': 1, '18': 2, '19': 2}
+The list of cards in sorted order looks like {'21': 1, '18': 2, '19': 2} 
+Working on hand QQQJA 
+{'20': 1}
+{'20': 2}
+{'20': 3}
+{'20': 3, '19': 1}
+{'20': 3, '19': 1, '22': 1}
+The list of cards in sorted order looks like {'20': 3, '19': 1, '22': 1} 
